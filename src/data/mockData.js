@@ -1,0 +1,240 @@
+// Mock Doctor Data
+export const currentDoctor = {
+  id: 1,
+  name: "Dr. Ahmet Yılmaz",
+  specialty: "Dahiliye Uzmanı",
+  email: "ahmet.yilmaz@hastane.com",
+  avatar: "AY",
+};
+
+// Mock Patients Data
+export const patientsData = [
+  {
+    id: 1,
+    name: "Elif Kaya",
+    age: 34,
+    gender: "Kadın",
+    phone: "0532 111 2233",
+    email: "elif.kaya@mail.com",
+    bloodType: "A+",
+    registeredDate: "2025-06-15",
+    status: "active",
+    diseases: [
+      {
+        id: 1,
+        name: "Tip 2 Diyabet",
+        diagnosedDate: "2025-06-15",
+        status: "tedavi",
+        severity: "orta",
+        notes: "HbA1c: 7.2, Metformin 1000mg başlandı. Diyet ve egzersiz önerisi verildi.",
+        medications: ["Metformin 1000mg", "Glimepirid 2mg"],
+      },
+      {
+        id: 2,
+        name: "Hipertansiyon",
+        diagnosedDate: "2025-08-20",
+        status: "tedavi",
+        severity: "hafif",
+        notes: "Kan basıncı: 150/90. Amlodipine başlandı.",
+        medications: ["Amlodipine 5mg"],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Mehmet Demir",
+    age: 52,
+    gender: "Erkek",
+    phone: "0533 222 3344",
+    email: "mehmet.demir@mail.com",
+    bloodType: "B+",
+    registeredDate: "2025-03-10",
+    status: "active",
+    diseases: [
+      {
+        id: 3,
+        name: "Koroner Arter Hastalığı",
+        diagnosedDate: "2025-03-10",
+        status: "tedavi",
+        severity: "ciddi",
+        notes: "Anjiyografi yapıldı, 2 damarda tıkanıklık tespit edildi. Stent uygulandı.",
+        medications: ["Aspirin 100mg", "Atorvastatin 40mg", "Metoprolol 50mg"],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Ayşe Çelik",
+    age: 28,
+    gender: "Kadın",
+    phone: "0534 333 4455",
+    email: "ayse.celik@mail.com",
+    bloodType: "O-",
+    registeredDate: "2025-09-01",
+    status: "active",
+    diseases: [
+      {
+        id: 4,
+        name: "Demir Eksikliği Anemisi",
+        diagnosedDate: "2025-09-01",
+        status: "iyileşti",
+        severity: "hafif",
+        notes: "Hemoglobin: 9.8, Ferritin: 5. Demir takviyesi başlandı.",
+        medications: ["Ferröz Sülfat 325mg"],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Ali Öztürk",
+    age: 67,
+    gender: "Erkek",
+    phone: "0535 444 5566",
+    email: "ali.ozturk@mail.com",
+    bloodType: "AB+",
+    registeredDate: "2024-11-20",
+    status: "active",
+    diseases: [
+      {
+        id: 5,
+        name: "KOAH",
+        diagnosedDate: "2024-11-20",
+        status: "tedavi",
+        severity: "ciddi",
+        notes: "FEV1: %45. Bronkodilatör ve inhaler kortikosteroid başlandı.",
+        medications: ["Salbutamol İnhaler", "Budesonide İnhaler", "Tiotropium"],
+      },
+      {
+        id: 6,
+        name: "Tip 2 Diyabet",
+        diagnosedDate: "2025-01-15",
+        status: "tedavi",
+        severity: "orta",
+        notes: "HbA1c: 8.1. İnsülin tedavisine geçildi.",
+        medications: ["İnsülin Glarjin 20 IU", "Metformin 1000mg"],
+      },
+      {
+        id: 7,
+        name: "Hipertansiyon",
+        diagnosedDate: "2024-12-01",
+        status: "tedavi",
+        severity: "orta",
+        notes: "Kan basıncı: 160/100. Kombine tedavi başlandı.",
+        medications: ["Ramipril 5mg", "Hidroklorotiyazid 12.5mg"],
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Fatma Yıldız",
+    age: 45,
+    gender: "Kadın",
+    phone: "0536 555 6677",
+    email: "fatma.yildiz@mail.com",
+    bloodType: "A-",
+    registeredDate: "2025-07-22",
+    status: "active",
+    diseases: [
+      {
+        id: 8,
+        name: "Hipotiroidizm",
+        diagnosedDate: "2025-07-22",
+        status: "tedavi",
+        severity: "hafif",
+        notes: "TSH: 12.5, sT4: 0.6. Levotiroksin başlandı.",
+        medications: ["Levotiroksin 50mcg"],
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Hasan Arslan",
+    age: 41,
+    gender: "Erkek",
+    phone: "0537 666 7788",
+    email: "hasan.arslan@mail.com",
+    bloodType: "O+",
+    registeredDate: "2025-05-05",
+    status: "active",
+    diseases: [
+      {
+        id: 9,
+        name: "Gastrit",
+        diagnosedDate: "2025-05-05",
+        status: "iyileşti",
+        severity: "hafif",
+        notes: "Endoskopide yaygın gastrit saptandı. PPI başlandı, H.pylori tedavisi verildi.",
+        medications: ["Lansoprazol 30mg"],
+      },
+      {
+        id: 10,
+        name: "Üriner Sistem Enfeksiyonu",
+        diagnosedDate: "2025-10-10",
+        status: "iyileşti",
+        severity: "hafif",
+        notes: "Kültürde E.coli üredi. Antibiyotik tedavisi verildi.",
+        medications: ["Siprofloksasin 500mg"],
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Zeynep Koç",
+    age: 55,
+    gender: "Kadın",
+    phone: "0538 777 8899",
+    email: "zeynep.koc@mail.com",
+    bloodType: "B-",
+    registeredDate: "2025-02-14",
+    status: "active",
+    diseases: [
+      {
+        id: 11,
+        name: "Romatoid Artrit",
+        diagnosedDate: "2025-02-14",
+        status: "tedavi",
+        severity: "orta",
+        notes: "RF pozitif, Anti-CCP yüksek. DMARD tedavisi başlandı.",
+        medications: ["Metotreksat 15mg/hafta", "Folik asit 5mg", "Prednizolon 5mg"],
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Burak Şahin",
+    age: 38,
+    gender: "Erkek",
+    phone: "0539 888 9900",
+    email: "burak.sahin@mail.com",
+    bloodType: "A+",
+    registeredDate: "2025-11-01",
+    status: "active",
+    diseases: [
+      {
+        id: 12,
+        name: "Migren",
+        diagnosedDate: "2025-11-01",
+        status: "tedavi",
+        severity: "orta",
+        notes: "Aura ile birlikte migren atakları. Profilaktik tedavi başlandı.",
+        medications: ["Topiramat 50mg", "Sumatriptan 50mg (atak)"],
+      },
+    ],
+  },
+];
+
+// Dashboard statistics
+export const getDashboardStats = (patients) => {
+  const totalPatients = patients.length;
+  const allDiseases = patients.flatMap((p) => p.diseases);
+  const activeDiseases = allDiseases.filter((d) => d.status === "tedavi").length;
+  const recoveredDiseases = allDiseases.filter((d) => d.status === "iyileşti").length;
+  const seriousCases = allDiseases.filter((d) => d.severity === "ciddi" && d.status === "tedavi").length;
+
+  return {
+    totalPatients,
+    activeDiseases,
+    recoveredDiseases,
+    seriousCases,
+  };
+};
